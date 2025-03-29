@@ -47,6 +47,9 @@ figure h3 {
 .fullcolor.soda {
   background-color: var(--soda-color);
 }
+.fullcolor.ffn {
+  height: 100vh;
+}
 .fullcolor.bf {
   background-color: var(--bf-color);
 }
