@@ -1,0 +1,67 @@
+{
+  "name": "plate",
+  "version": "0.0.0",
+  "description": "FFN Cerveza Artesanal",
+  "main": "build/main.js",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "url": "https://soypache.co",
+    "name": "Alvaro Cabrera",
+    "email": "pateketrueke@gmail.com"
+  },
+  "scripts": {
+    "now-build": "npm run dist",
+    "now-dev": "npm run dev",
+    "start": "npm run dev",
+    "dev": "npm run build -- -w",
+    "dist": "npm run build -- -q",
+    "check": "eslint 'src/**/*.{js,pug,svelte}'",
+    "build": "mortero -dcpublic:. -X'{lib,shared,components}' -ecss.less -I.gitignore --platform browser",
+    "predist": "npm run check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tacoss/plate.git",
+    "issues": "https://github.com/tacoss/plate/issues"
+  },
+  "mortero": {
+    "bundle": [
+      "**/index.js",
+      "**/scripts/*.js"
+    ],
+    "rename": [
+      "src/**:{filepath/1}",
+      "**/index.(css|js):{basedir}{ext}",
+      "**/{pages,resources}/**:{filepath/1}",
+      "**/!(index).html:{basedir}/{name}/index.html"
+    ],
+    "options": {
+      "kramed": {
+        "highlight": true
+      },
+      "less": {
+        "plugins": [
+          "less-plugin-autoprefix"
+        ]
+      }
+    }
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-pug": "^1.2.3",
+    "eslint-plugin-svelte3": "^3.2.0",
+    "highlight.js": "^11.7.0",
+    "kramed": "^0.5.6",
+    "less": "^4.1.1",
+    "less-plugin-autoprefix": "^2.0.0",
+    "live-server": "^1.2.2",
+    "mortero": "^0.0.116",
+    "pug": "^3.0.2",
+    "somedom": "^0.4.32",
+    "svelte": "^3.59.2",
+    "yrv": "^0.0.57"
+  }
+}
