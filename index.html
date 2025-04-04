@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head>
     <meta name="package" content="plate v0.0.0">
-    <meta name="revision" content="896129d">
+    <meta name="revision" content="c0874ba">
     <base href="/">
     <meta lang="en">
     <meta charset="utf-8">
@@ -14,7 +14,7 @@
     <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
     <meta name="description" content="FFN Cerveza Artesanal">
     <meta property="og:description" content="FFN Cerveza Artesanal">
-    <link rel="stylesheet" href="styles.css?t=896129d">
+    <link rel="stylesheet" href="styles.css?t=c0874ba">
 
     <meta name="og:title" content="Fermentos Finos del Nayar">
     <title>Fermentos Finos del Nayar</title>
@@ -104,7 +104,7 @@
       </div>
     </section>
     <section class="fullcolor bf">
-      <div class="container">
+      <div class="container padded">
         <figure>
           <img src="images/gdl_beer_fest.svg" class="fitted" title="Guadalajara Beer Festival">
         </figure><br>
@@ -113,7 +113,9 @@
             <svg width="48" height="48"><use xlink:href="#icon-menu"></use></svg> MENÚ
           </summary>
           <div class="overlay">
-            <h2 class="alfa-slab-one-regular">MENÚ</h2>
+            <h2 class="alfa-slab-one-regular">MENÚ 
+              <button onclick="this.closest('details').open = false">&times;</button>
+            </h2>
             <div class="flex between mobile">
               <pre>Caldito de Camarón .............. $120
 Doble IPA

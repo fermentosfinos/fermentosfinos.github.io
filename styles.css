@@ -84,7 +84,16 @@ figure h3 {
   }
 }
 .overlay h2 {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.overlay h2 button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-size: 3rem;
 }
 hr {
   border: none;
@@ -123,7 +132,7 @@ hr {
   background: #833ab4;
   background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
 }
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 520px) {
   .fullcolor {
     height: 100vh;
   }
@@ -174,7 +183,7 @@ hr {
   overflow: hidden;
   border-radius: 20px;
 }
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 520px) {
   .rounded {
     border-radius: 50px;
   }
