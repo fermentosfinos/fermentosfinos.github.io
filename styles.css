@@ -26,91 +26,12 @@ body {
       scroll-snap-type: y mandatory;
   background-color: var(--primary-color);
 }
-svg {
-  fill: currentColor;
-}
 figure {
   margin: 0;
   text-align: center;
 }
 figure h3 {
   color: white;
-}
-.modal summary {
-  font-size: 2rem;
-  cursor: pointer;
-  list-style: none;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  transition: color 0.3s ease;
-}
-.modal summary:hover {
-  color: white;
-}
-.modal summary::-webkit-details-marker {
-  display: none;
-}
-.modal[open] summary::before {
-  inset: 0;
-  content: '';
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.overlay {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background-image: url('../images/ffn_camaron_mark.svg');
-  background-color: #f4cde2;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: fixed;
-  width: 90vw;
-  inset: 0;
-  margin: auto;
-  overflow: auto;
-  max-width: 1260px;
-  max-height: 90vh;
-  border-radius: 20px;
-}
-@media screen and (min-width: 960px) {
-  .overlay {
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-.overlay h2 {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.overlay h2 button {
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  font-size: 3rem;
-}
-.overlay pre {
-  text-shadow: 1px 1px 3px #ffffff;
-}
-hr {
-  border: none;
-  margin: 20px auto;
-  width: 87%;
-}
-.mobile {
-  font-size: 0.75rem;
-}
-@media screen and (min-width: 960px) {
-  .mobile {
-    gap: 5rem;
-  }
 }
 .fullcolor {
   display: flex;
@@ -136,7 +57,7 @@ hr {
   background: #833ab4;
   background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
 }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 420px) {
   .fullcolor {
     height: 100vh;
   }
@@ -156,12 +77,8 @@ hr {
 .container {
   max-width: 800px;
 }
-.container a {
-  color: white;
-  text-decoration: none;
-}
 .fitted {
-  max-width: 87%;
+  max-width: 90%;
   max-height: auto;
 }
 .padded {
@@ -174,24 +91,12 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-}
-@media screen and (min-width: 960px) {
-  .flex {
-    flex-direction: row;
-  }
-}
-.gapped {
-  gap: 20px;
-}
-.gapped.between {
-  justify-content: space-between;
 }
 .rounded {
   overflow: hidden;
   border-radius: 20px;
 }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 420px) {
   .rounded {
     border-radius: 50px;
   }
