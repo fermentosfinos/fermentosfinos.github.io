@@ -92,7 +92,7 @@ hr {
   width: 87%;
 }
 .mobile {
-  font-size: 0.87rem;
+  font-size: 0.75rem;
 }
 @media screen and (min-width: 960px) {
   .mobile {
