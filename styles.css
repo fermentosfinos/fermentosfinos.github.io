@@ -83,17 +83,18 @@ figure h3 {
     justify-content: center;
   }
 }
-.overlay h2 {
+.overlay > button {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-}
-.overlay h2 button {
   background-color: transparent;
   cursor: pointer;
   border: none;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+.overlay > button i {
+  font-size: 5rem;
 }
 hr {
   border: none;
