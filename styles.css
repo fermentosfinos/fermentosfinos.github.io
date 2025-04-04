@@ -61,7 +61,7 @@ figure h3 {
 .overlay {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-image: url('../images/ffn_camaron_mark.svg');
-  background-color: white;
+  background-color: #f3a3cb;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
