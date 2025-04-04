@@ -152,6 +152,10 @@ hr {
 .container {
   max-width: 800px;
 }
+.container a {
+  color: white;
+  text-decoration: none;
+}
 .fitted {
   max-width: 90%;
   max-height: auto;
