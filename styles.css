@@ -104,11 +104,11 @@ hr {
   margin: 20px auto;
   width: 87%;
 }
-.plain {
+.mobile {
   font-size: 0.75rem;
 }
 @media screen and (min-width: 960px) {
-  .plain {
+  .mobile {
     gap: 5rem;
   }
 }
