@@ -96,6 +96,9 @@ figure h3 {
   border: none;
   font-size: 3rem;
 }
+.overlay pre {
+  text-shadow: 1px 1px 3px #ffffff;
+}
 hr {
   border: none;
   margin: 20px auto;
@@ -108,9 +111,6 @@ hr {
   .plain {
     gap: 5rem;
   }
-}
-.plain pre {
-  text-shadow: 1px 1px 3px #ffffff;
 }
 .fullcolor {
   display: flex;
