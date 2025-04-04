@@ -101,15 +101,15 @@ hr {
   margin: 20px auto;
   width: 87%;
 }
-.mobile {
+.plain {
   font-size: 0.75rem;
 }
 @media screen and (min-width: 960px) {
-  .mobile {
+  .plain {
     gap: 5rem;
   }
 }
-.mobile pre {
+.plain pre {
   text-shadow: 1px 1px 1px #ffffff;
 }
 .fullcolor {
