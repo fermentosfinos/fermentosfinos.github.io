@@ -109,6 +109,9 @@ hr {
     gap: 5rem;
   }
 }
+.mobile pre {
+  text-shadow: 1px 1px 1px #ffffff;
+}
 .fullcolor {
   display: flex;
   align-items: center;
