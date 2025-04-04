@@ -28,10 +28,92 @@ body {
   background-color: var(--primary-color);
 }
 
+svg {
+  fill: currentColor;
+}
+
 figure {
   margin: 0;
   text-align: center;
   h3 { color: white; }
+}
+
+.modal {
+  summary {
+    font-size: 2rem;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+    &:hover { color: white; }
+    &::-webkit-details-marker {
+      display:none;
+    }
+  }
+  &[open] summary {
+    &::before {
+      inset: 0;
+      content: '';
+      position: fixed;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.overlay {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-image: url('images/ffn_camaron_mark.svg');
+  background-color: #f4cde2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  width: 90vw;
+  inset: 0;
+  margin: auto;
+  overflow: auto;
+  max-width: 1260px;
+  max-height: 90vh;
+  border-radius: 20px;
+  @media screen and (min-width: 960px) {
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  h2 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    button {
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+      font-size: 3rem;
+    }
+  }
+  pre {
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 255, .87);
+  }
+}
+
+hr {
+  border: none;
+  margin: 20px auto;
+  width: 87%;
+}
+
+.mobile {
+  font-size: .75rem;
+  @media screen and (min-width: 960px) {
+    gap: 5rem;
+  }
 }
 
 .fullcolor {
@@ -49,7 +131,7 @@ figure {
     background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
   }
 
-  @media screen and (min-width: 420px) {
+  @media screen and (min-width: 520px) {
     height: 100vh;
     &.caldito .container {
       display: flex;
@@ -64,10 +146,14 @@ figure {
 
 .container {
   max-width: 800px;
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .fitted {
-  max-width: 90%;
+  max-width: 87%;
   max-height: auto;
 }
 
@@ -83,12 +169,24 @@ figure {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  @media screen and (min-width: 960px) {
+    flex-direction: row;
+  }
+}
+
+.gapped {
+  gap: 20px;
+}
+
+.gapped.between {
+  justify-content: space-between;
 }
 
 .rounded {
   overflow: hidden;
   border-radius: 20px;
-  @media screen and (min-width: 420px) {
+  @media screen and (min-width: 520px) {
     border-radius: 50px;
   }
 }
