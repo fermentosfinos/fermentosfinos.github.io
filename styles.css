@@ -110,7 +110,7 @@ hr {
   }
 }
 .plain pre {
-  text-shadow: 1px 1px 1px #ffffff;
+  text-shadow: 1px 1px 3px #ffffff;
 }
 .fullcolor {
   display: flex;
