@@ -6,6 +6,8 @@
 
 :root {
   --primary-color: #F03C4E;
+  --blank-color: #FFFFFF;
+  --blue-color: #55AECB;
   --bf-color: #E3B02D;
   --soda-color: #FFDA47;
   --caldito-color: #C3E4B1;
@@ -124,6 +126,15 @@ hr {
 
   &.sentimiento { background-color: var(--sentimiento-color); }
   &.caldito { background-color: var(--caldito-color); }
+  &.blank {
+    background-color: var(--blank-color);
+    a { color: var(--blue-color); }
+    a:hover { text-decoration: underline; }
+    li small { display: block; }
+    dd + dt { margin-top: 1rem; }
+    dl ul { list-style-type: "✰"; }
+    ul { margin: 0; padding: 0 }
+  }
   &.soda { background-color: var(--soda-color); }
   &.ffn { height: 100vh; }
   &.bf { background-color: var(--bf-color); }
@@ -132,9 +143,9 @@ hr {
     background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
   }
 
-  @media screen and (min-width: 520px) {
+  @media screen and (min-width: 720px) {
     height: 100vh;
-    &.caldito .container {
+    &.flex .container {
       display: flex;
       align-items: center;
       .fitted { max-width: 420px; }
