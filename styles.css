@@ -5,6 +5,8 @@
 }
 :root {
   --primary-color: #F03C4E;
+  --blank-color: #FFFFFF;
+  --blue-color: #55AECB;
   --bf-color: #E3B02D;
   --soda-color: #FFDA47;
   --caldito-color: #C3E4B1;
@@ -124,6 +126,28 @@ hr {
 .fullcolor.caldito {
   background-color: var(--caldito-color);
 }
+.fullcolor.blank {
+  background-color: var(--blank-color);
+}
+.fullcolor.blank a {
+  color: var(--blue-color);
+}
+.fullcolor.blank a:hover {
+  text-decoration: underline;
+}
+.fullcolor.blank li small {
+  display: block;
+}
+.fullcolor.blank dd + dt {
+  margin-top: 1rem;
+}
+.fullcolor.blank dl ul {
+  list-style-type: "✰";
+}
+.fullcolor.blank ul {
+  margin: 0;
+  padding: 0;
+}
 .fullcolor.soda {
   background-color: var(--soda-color);
 }
@@ -137,15 +161,15 @@ hr {
   background: #833ab4;
   background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
 }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 720px) {
   .fullcolor {
     height: 100vh;
   }
-  .fullcolor.caldito .container {
+  .fullcolor.flex .container {
     display: flex;
     align-items: center;
   }
-  .fullcolor.caldito .container .fitted {
+  .fullcolor.flex .container .fitted {
     max-width: 420px;
   }
 }
